@@ -45,6 +45,8 @@ export default function App() {
     const userResponse = await getBasicUserInfo();
     setUser(userResponse);
     setIsLoading(false);
+    const accessToken = await getAccessToken();
+    console.log(accessToken);
   }
 
   const handleSignIn = async () => {
