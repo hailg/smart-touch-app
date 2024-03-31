@@ -40,7 +40,8 @@ const authConfig = {
   signOutRedirectURL: window.config.redirectUrl,
   clientID: window.config.asgardeoClientId,
   baseUrl: window.config.asgardeoBaseUrl,
-  scope: ["openid", "profile"],
+  // scope: ["openid", "profile"],
+  scope: ["openid", "app_roles", "email", "groups", "phone", "profile", "urn:thedeveloperlife:backendservicesmarttouchm:create_contact"]
 };
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
