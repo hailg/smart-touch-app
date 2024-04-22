@@ -29,6 +29,7 @@ if (!window.config) {
     asgardeoBaseUrl: 'https://api.asgardeo.io/t/thedeveloperlife',
     choreoApiUrl:
       'https://2b2e76c4-bc0a-4c0c-890e-65afe26e1d00-dev.e1-us-cdp-2.choreoapis.dev/smarttouchbackend/backend-service/smarttouch-management-7ee',
+    apiUrl: 'http://localhost:8080/v1',
     scope: [
       'openid',
       'app_roles',

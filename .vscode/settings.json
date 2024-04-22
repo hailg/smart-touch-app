@@ -8,6 +8,9 @@
   "vs-code-prettier-eslint.prettierLast": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   } // set as "true" to run 'prettier' last not first
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "[javascript]": {

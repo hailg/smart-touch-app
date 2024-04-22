@@ -5,7 +5,7 @@ import { useAuthContext } from '@asgardeo/auth-react'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components'
-import { Main, Customers, Calendar, Editor, Groups } from './pages'
+import { Main, Contacts, Calendar, Editor, Groups } from './pages'
 import './App.css'
 
 import { useStateContext } from './contexts/ContextProvider'
@@ -29,7 +29,9 @@ const App = () => {
     themeSettings,
     setThemeSettings,
     user,
-    setUser
+    setUser,
+    accessToken,
+    setAccessToken
   } = useStateContext()
   const [isLoading, setIsLoading] = useState(false)
   const [isAuthLoading, setIsAuthLoading] = useState(false)
@@ -67,10 +69,11 @@ const App = () => {
   async function getUser() {
     setIsLoading(true)
     const userResponse = await getBasicUserInfo()
-    console.log(userResponse)
+    // console.log(userResponse)
     setUser(userResponse)
     setIsLoading(false)
-    // const accessToken = await getAccessToken()
+    const accessToken = await getAccessToken()
+    setAccessToken(accessToken)
     // console.log(accessToken)
   }
 
@@ -148,7 +151,7 @@ const App = () => {
                 <Route path="/dashboard" element={<Main />} />
 
                 {/* pages  */}
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/contacts" element={<Contacts />} />
                 <Route path="/groups" element={<Groups />} />
 
                 {/* apps  */}
