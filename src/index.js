@@ -30,7 +30,8 @@ if (!window.config) {
     choreoApiUrl:
       'https://2b2e76c4-bc0a-4c0c-890e-65afe26e1d00-dev.e1-us-cdp-2.choreoapis.dev/smarttouchbackend/backend-service/smarttouch-management-7ee',
     // apiUrl: 'http://localhost:8080/v1',
-    apiUrl: 'https://2b2e76c4-bc0a-4c0c-890e-65afe26e1d00-dev.e1-us-cdp-2.choreoapis.dev/smarttouchbackend/backend-service/smarttouch-management-7ee/v1.0'
+    apiUrl:
+      'https://2b2e76c4-bc0a-4c0c-890e-65afe26e1d00-dev.e1-us-cdp-2.choreoapis.dev/smarttouchbackend/backend-service/smarttouch-management-7ee/v1.0',
     scope: [
       'openid',
       'app_roles',
